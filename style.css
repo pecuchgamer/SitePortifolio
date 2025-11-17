@@ -92,7 +92,6 @@ body {
 
 .cabecalho {
   background-color: var(--cor-terciaria);
-
 }
 
 .cabecalho-menu :hover {
@@ -166,21 +165,33 @@ color: var(--cor-secundaria);
   font-size: 1.125rem;
 }
 
-.logo-almeida {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 1rem;
-  border:0.125rem solid var(--cor-terciaria);
-}
-
 /*img-criada-pelaIa*/
 
 .img-programador {
-  height: 20.625rem;
-  width: 15.625rem;
+  height: 40%;
+  width: 40%;
   border: 0.5rem solid var(--cor-terciaria);
     border-radius: 0.5rem;
-}
+    }
+
+    @media (max-width: 700px) 
+    {
+      .cabecalho {
+        padding: 4%;
+      }
+      .cabecalho-menu {
+        justify-content: center;
+      }
+      .apresentacao{flex-direction: column-reverse;
+        gap: 60px;
+      }
+      .img-programador{flex-direction: column-reverse;}
+     
+      .apresentacao-contener {
+width: auto;
+      }
+           
+    }
 
 .rodape {
   background-color: var(--cor-secundaria);
